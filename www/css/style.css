@@ -510,8 +510,15 @@ textarea.form-control {
 
 
 
+/*以下を変更*/
+body.dark{ /*darkクラスが作動したら、、*/
+    background:#121212;/*背景を黒にする*/
+    color:#fff;/*文字を白にする*/
+}
 
-body.dark{ 
-    background:#121212;
-    color:#fff;
+body.dark.post,/*postは投稿している部分。body.darkがついている時の投稿。*/
+body.dark.post-form,/*入力欄を黒くする。/*
+body.dark.auth-container,/*ログインの画面も黒にする。*/
+body.dark.user-info{/*ログイン中のユーザー情報の部分も黒くする*/
+    background:#1e1e1e;/*明るめの黒*/
 }

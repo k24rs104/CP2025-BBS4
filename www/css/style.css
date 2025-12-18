@@ -522,3 +522,11 @@ body.dark.auth-container,/*ログインの画面も黒にする。*/
 body.dark.user-info{/*ログイン中のユーザー情報の部分も黒くする*/
     background:#1e1e1e;/*明るめの黒*/
 }
+
+body.dark textarea, /*textarea(投稿欄)*/
+body.dark input, /*ログイン欄のinpuｔにも追加する。*/
+body.dark  select{ /*投稿一覧の並び方を選択するとこにも追加*/
+background: #2a2a2a;
+color: #fff;
+border:1px solid #555;
+}

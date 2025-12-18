@@ -458,6 +458,12 @@ function updateUI(user) {
 
 $(function() {
     // Firebaseの初期化
+    //ここの変更
+    const hour = new Date().getHours();/*現在の時刻*/
+    if(hour >= 20||hour<7){ /*もし夜の間(20時から７時まで)なら*/
+        document.body.classList.add('dark');/*darkクラスを付ける。*/
+    }
+
     try {
         firebase.initializeApp(firebaseConfig);
         console.log("Firebase initialized successfully");

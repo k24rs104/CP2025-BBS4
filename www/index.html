@@ -154,12 +154,12 @@ function timeAgo(timestamp) {
     const day    = 24 * hour;                // 1日
 
     if (diff < hour) {
-        return floor(diff / minute) + '分前';
+        return Math.floor(diff / minute) + '分前';
     }
     if (diff < day) {
-        return floor(diff / hour) + '時間前';
+        return Math.floor(diff / hour) + '時間前';
     }
-    return floor(diff / day) + '日前';
+    return Math.floor(diff / day) + '日前';
 }
 
 
